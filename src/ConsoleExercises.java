@@ -71,34 +71,34 @@ public class ConsoleExercises {
 //        System.out.format("The area of the class is %d feet.\n", classArea);
 //        System.out.format("The perimeter of the class is %d feet.\n", classPerimeter);
 //
-//
-/**         Bonuses */
-//Accept decimal entries.
-//Calculate the volume of the rooms in addition to the area and perimeter.
-        /* Get length from user*/
-        System.out.println("Please enter the length of Codeup's classroom in feet: ");
-        String length = scanner.nextLine();
-        double classLength = Double.parseDouble(length);
-        /* Get width from user*/
-        System.out.println("Please enter the width of Codeup's classroom in feet: ");
-        String width = scanner.nextLine();
-        double classWidth = Double.parseDouble(width);
-        /*Get Height from Users*/
-        System.out.println("Please enter the height of Codeup's classroom in feet: ");
-        String height = scanner.nextLine();
-        double classHeight = (int) Double.parseDouble(height);
-        /*Display length and width to user */
-        System.out.format("The class length is %.2f feet.\n", classLength);
-        System.out.format("The class width is %.2f feet.\n", classWidth);
-        System.out.format("The class height is %.2f feet.\n", classHeight);
-        /* Calculate area and perimeter*/
-        double classArea = classLength * classWidth;
-        double classPerimeter = (2 * classLength) + (2 * classWidth);
-        double classVolume = classLength * classWidth * classHeight;
-        /* Display area and perimeter  to user*/
-        System.out.format("The area of the class is %.2f feet.\n", classArea);
-        System.out.format("The perimeter of the class is %.2f feet.\n", classPerimeter);
-        System.out.format("The volume of the class is %.2f feet.\n", classVolume);
+////
+///**         Bonuses */
+////Accept decimal entries.
+////Calculate the volume of the rooms in addition to the area and perimeter.
+//        /* Get length from user*/
+//        System.out.println("Please enter the length of Codeup's classroom in feet: ");
+//        String length = scanner.nextLine();
+//        double classLength = Double.parseDouble(length);
+//        /* Get width from user*/
+//        System.out.println("Please enter the width of Codeup's classroom in feet: ");
+//        String width = scanner.nextLine();
+//        double classWidth = Double.parseDouble(width);
+//        /*Get Height from Users*/
+//        System.out.println("Please enter the height of Codeup's classroom in feet: ");
+//        String height = scanner.nextLine();
+//        double classHeight = (int) Double.parseDouble(height);
+//        /*Display length and width to user */
+//        System.out.format("The class length is %.2f feet.\n", classLength);
+//        System.out.format("The class width is %.2f feet.\n", classWidth);
+//        System.out.format("The class height is %.2f feet.\n", classHeight);
+//        /* Calculate area and perimeter*/
+//        double classArea = classLength * classWidth;
+//        double classPerimeter = (2 * classLength) + (2 * classWidth);
+//        double classVolume = classLength * classWidth * classHeight;
+//        /* Display area and perimeter  to user*/
+//        System.out.format("The area of the class is %.2f feet.\n", classArea);
+//        System.out.format("The perimeter of the class is %.2f feet.\n", classPerimeter);
+//        System.out.format("The volume of the class is %.2f feet.\n", classVolume);
 
 
 //        The Scanner class can be told specifically what characters or pattern separates tokens in a piece of input with the useDelimiter method. Add the following line of code to your application after you have created a scanner (assuming the variable holding the Scanner is named scanner):
