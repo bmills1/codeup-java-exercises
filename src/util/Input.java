@@ -66,7 +66,7 @@ public class Input {
 //
 //
     public double getDouble(double min, double max) {
-        System.out.println("Enter a decimal 1 and 10: ");
+        System.out.println("Decimal: ");
         if (sc.hasNextInt()) {
             int userNum = Integer.parseInt(this.sc.nextLine());
             if (userNum >= min && userNum <= max) {
@@ -82,8 +82,8 @@ public class Input {
     }
 
 //    double getDouble(double min, double max)
-    double getDouble(){
-        System.out.println("Give me a decimal: ");
+    public double getDouble(String prompt){
+        System.out.println(prompt);
         return Double.parseDouble(this.sc.nextLine());
     }
 
