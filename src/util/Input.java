@@ -47,7 +47,6 @@ public class Input {
     //
 //
     public int getInt(int min, int max) {
-        System.out.println(getString());
         if (this.sc.hasNextInt()) {
             int userNum = Integer.parseInt(this.sc.nextLine());
             if (userNum >= min && userNum <= max) {
@@ -57,16 +56,15 @@ public class Input {
             }
         } else {
             System.out.println("Invalid Input");
-        getInt(min, max);
         }
-        return getInt(min, max);
+        return 0;
     }
 //
 //
 //
 //
     public double getDouble(double min, double max) {
-        System.out.println("Decimal: ");
+        System.out.println("Enter a decimal 1 and 10: ");
         if (sc.hasNextInt()) {
             int userNum = Integer.parseInt(this.sc.nextLine());
             if (userNum >= min && userNum <= max) {
