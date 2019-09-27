@@ -6,8 +6,9 @@ public class Movie {
 //    name and category, and a constructor that sets both of these. Create methods to access these properties and change them (getters and setters).
 
     public Movie(String movieName,String movieCategory){
-        setMovieName(movieName);
-        setMovieCategory(movieCategory);
+       this.name = movieName;
+       this.category = movieCategory;
+
     }
 //    public Movie(String movieCategory){
 //        setMovieCategory(movieCategory);
