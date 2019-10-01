@@ -8,8 +8,15 @@ public class Input {
 //        System.out.println(test.getString(""));
 //        System.out.println(test.getString("This"));
 //        System.out.println(test.yesNo());
-        System.out.println(test.getInt(1, 10));
+//        System.out.println("Give Int");
+//        System.out.println(test.getInt(1, 10));
+//        System.out.println("Give double");
+//        System.out.println(test.getDouble(1, 10));
 //        System.out.println(test.getDouble(1, 10.5));
+        System.out.println("Enter a binary number:");
+        System.out.println(test.getBinary());
+        System.out.println("Enter a hexidecimal number:");
+        System.out.println(test.getHex());
     }
 
     private Scanner sc;
@@ -44,45 +51,71 @@ public class Input {
 
     }
 
-    //
-//
+
     public int getInt(int min, int max) {
-        if (this.sc.hasNextInt()) {
-            int userNum = Integer.parseInt(this.sc.nextLine());
+        try {
+            int userNum = Integer.valueOf(this.sc.nextLine());
             if (userNum >= min && userNum <= max) {
                 return userNum;
             } else {
-                System.out.println("Invalid Number Range");
+                System.out.println("Out of Range");
             }
-        } else {
+        } catch (NumberFormatException e) {
             System.out.println("Invalid Input");
         }
-        return 0;
+            return getInt(min, max);
     }
-//
-//
-//
-//
+
+
+//        if (this.sc.hasNextInt()) {
+//            int userNum = Integer.parseInt(this.sc.nextLine());
+//            if (userNum >= min && userNum <= max) {
+//                return userNum;
+//            } else {
+//                System.out.println("Invalid Number Range");
+//            }
+//        } else {
+//            System.out.println("Invalid Input");
+//        }
+
+
     public double getDouble(double min, double max) {
         System.out.println("Enter a decimal 1 and 10: ");
-        if (sc.hasNextInt()) {
-            int userNum = Integer.parseInt(this.sc.nextLine());
+        try{
+            double userNum = Double.valueOf(this.sc.nextLine());
             if (userNum >= min && userNum <= max) {
                 return userNum;
-            } else {
-                System.out.println("Invalid Num Range");
+            }else{
+                System.out.println("Out of Range");
             }
-        } else {
-            System.out.print("Invalid Input");
+        }catch(Exception e){
+            System.out.println("Invalid Input");
         }
-        return 0;
-//       int userInput = getInteger(1, 10);
+        return getDouble(min, max);
+
     }
 
 //    double getDouble(double min, double max)
     public double getDouble(String prompt){
         System.out.println(prompt);
         return Double.parseDouble(this.sc.nextLine());
+    }
+
+    public int getBinary(){
+
+        int userNum = Integer.valueOf(this.sc.nextLine());
+        String binary = Integer.toString(userNum);
+        System.out.println("Your number is " + Integer.valueOf(binary,2));
+        return    Integer.valueOf(binary,2);
+
+
+    }
+    public int getHex(){
+
+        int userNum = Integer.valueOf(this.sc.nextLine());
+        String hex = Integer.toString(userNum);
+        System.out.println("Your number is " + Integer.valueOf(hex,16));
+        return Integer.valueOf(hex,16);
     }
 
 

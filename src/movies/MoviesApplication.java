@@ -3,9 +3,11 @@ package movies;
 import util.Input;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class MoviesApplication {
     // re-initializes the movie array to display newly added movie
+
 
     public static Movie[] movieArray = MoviesArray.findAll();
 
@@ -107,5 +109,14 @@ public class MoviesApplication {
         newMovie[movieArray.length] = category;
         return newMovie;
     }
+//    HashMap <String, Movie> fmdb = new HashMap<>();
+//    fmdb.put("ttghc123", new Movie("JokER", "CRIME, DRAMA, THRILLER"));
+//
+//    for(String id : fmdb.keySet(){
+//        System.out.println("id ="+ id);
+//        System.out.println("getname =" + fdmb.get(id).);
+//        System.out.println();
+//    })
 
 }
+

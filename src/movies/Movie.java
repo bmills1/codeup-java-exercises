@@ -1,5 +1,7 @@
 package movies;
 
+import java.util.HashMap;
+
 public class Movie {
     private String name;
     private String category;
